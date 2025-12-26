@@ -1,21 +1,23 @@
-import { Header } from '@/components/landing/Header';
-import { Hero } from '@/components/landing/Hero';
-import { Stats } from '@/components/landing/Stats';
-import { Features } from '@/components/landing/Features';
-import { Webinar } from '@/components/landing/Webinar';
-import { CTA } from '@/components/landing/CTA';
-import { Footer } from '@/components/landing/Footer';
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { Problem } from '@/components/Problem';
+import { Workflow } from '@/components/Workflow';
+import { Features } from '@/components/Features';
+import { Stats } from '@/components/Stats';
+import { CTA } from '@/components/CTA';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-black font-sans selection:bg-orange-500 selection:text-white">
-      <Header />
-      <Hero />
-      <Stats />
-      <Features />
-      <Webinar />
-      <CTA />
-      <Footer />
-    </main>
-  );
+    return (
+        <main className="min-h-screen bg-[#020604] text-white selection:bg-[var(--color-primary)] selection:text-black">
+            <Navbar />
+            <Hero />
+            <Problem />
+            <Workflow />
+            <Features />
+            <Stats />
+            <CTA />
+            <Footer />
+        </main>
+    );
 }
